@@ -1,0 +1,59 @@
+html {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding to the container */
+  box-sizing: border-box; /* Include padding and border in the box model */
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}
+
+.post-preview {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.post-preview:hover {
+  transform: scale(1.05);
+}
+
+.post-preview a {
+  text-decoration: none;
+  color: #333; /* Link color */
+}
+
+.post-preview h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.post-preview p {
+  font-size: 1rem;
+  color: #555; /* Body text color */
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none; /* Prevent interactions when hidden */
+}
